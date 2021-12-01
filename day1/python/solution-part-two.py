@@ -1,4 +1,4 @@
-with open('./input.txt', 'r') as handle:
+with open('../input.txt', 'r') as handle:
     text = handle.read().splitlines()
     numbers = []
     length = len(text)
