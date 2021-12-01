@@ -1,5 +1,5 @@
 const { readFileSync } = require("node:fs");
-const input = readFileSync("./input.txt", "utf-8").split("\n");
+const input = readFileSync("../input.txt", "utf-8").split("\n");
 let increased = 0,
   numbers = [],
   length = input.length;
