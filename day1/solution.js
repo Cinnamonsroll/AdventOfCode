@@ -1,7 +1,8 @@
 const { readFileSync } = require("node:fs");
 const input = readFileSync("./input.txt", "utf-8").split("\n");
-let increased = 0;
-for (let i = 1; i < input.length - 1; i++) {
-  if (+input[i] > +input[i - 1]) increased++;
+const { performance } = require("perf_hooks");
+let increased = 1, length = input.length;
+for (let i = 1; i < length; i++) {
+  if (input[i] > input[i - 1]) increased++;
 }
 console.log(increased);
