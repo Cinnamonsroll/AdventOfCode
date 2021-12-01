@@ -5,7 +5,7 @@ let increased = 0,
   length = input.length;
 for (let i = 0, preSum; i < length; i++) {
   if (!i) {
-    numbers.push(+[input[i]], +[input[i + 1]], +[input[i + 2]]);
+    numbers.push(+input[i], +input[i + 1], +input[i + 2]);
     preSum = numbers[0] + numbers[1] + numbers[2];
     continue;
   }
