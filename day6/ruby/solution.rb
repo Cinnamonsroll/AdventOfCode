@@ -1,4 +1,4 @@
-input = File.read('./input.txt').scan(/\d+/).map(&:to_i)
+input = File.read('../input.txt').scan(/\d+/).map(&:to_i)
 [80].each do |days|
     count = Array.new(9,0)
     input.each {|i| count[i] += 1 }
